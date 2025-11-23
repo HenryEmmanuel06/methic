@@ -606,6 +606,7 @@ box-shadow: 0px 10px 16px 0px #00000040;
     background-position: center center;
     background-repeat: no-repeat;
     color: var(--white-color);
+    font-size: 14px;
 }
 
 .footer_top {
@@ -644,10 +645,16 @@ box-shadow: 0px 10px 16px 0px #00000040;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: var(--secondary-color);
+    background: var(--white-color);
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+.footer_social .social_links a:hover{
+    background-color: var(--primary-color);
+}
+.footer_social .social_links a:hover img{
+   filter: brightness(0) invert(1);
 }
 
 .footer_social .social_links a img {
@@ -671,12 +678,12 @@ box-shadow: 0px 10px 16px 0px #00000040;
 }
 
 .footer_links a {
-    color: rgba(255, 255, 255, .9);
+    color: var(--white-color);
     text-decoration: none;
 }
 
 .footer_links a:hover {
-    color: var(--white-color);
+    color: var(--primary-color);
 }
 
 .footer_contact {
@@ -1105,7 +1112,7 @@ text-align: center;
   font-weight: 600;
   font-size: 16px;
   line-height: 30px;
-  max-width: 640px;
+  max-width: 610px;
   margin-top: 10px;
 }
 
@@ -1150,6 +1157,7 @@ text-align: center;
   background: #E0F3FE;
   padding: 18px;
   border-radius: 12px;
+  max-width: 600px;
 }
 
 .hours_list{
