@@ -402,8 +402,58 @@ nav ul li .nav_link {
     border: 2px solid var(--tertiary-color);
     border-radius: 10px;
     max-height: 315px;
+    background: white;
+    transition: all 0.3s ease-in-out;
 }
-
+.services_card.services_card_1:hover{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), 
+            url("../images/service_hover_1.png");
+            background-size: cover;
+background-position: center;
+box-shadow: 0px 10px 16px 0px #00000040;
+}
+.services_card.services_card_1:hover{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), 
+            url("../images/service_hover_1.png");
+            background-size: cover;
+background-position: center;
+box-shadow: 0px 10px 16px 0px #00000040;
+}
+.services_card.services_card_2:hover{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), 
+            url("../images/service_hover_2.png");
+            background-size: cover;
+background-position: center;
+box-shadow: 0px 10px 16px 0px #00000040;
+}
+.services_card.services_card_3:hover{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), 
+            url("../images/service_hover_3.png");
+            background-size: cover;
+background-position: center;
+box-shadow: 0px 10px 16px 0px #00000040;
+}
+.services_card.services_card_4:hover{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), 
+            url("../images/service_hover_4.jpg");
+            background-size: cover;
+background-position: center;
+box-shadow: 0px 10px 16px 0px #00000040;
+}
+.services_card.services_card_5:hover{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), 
+            url("../images/service_hover_5.jpg");
+            background-size: cover;
+background-position: center;
+box-shadow: 0px 10px 16px 0px #00000040;
+}
+.services_card.services_card_6:hover{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), 
+            url("../images/service_hover_6.jpg");
+            background-size: cover;
+background-position: center;
+box-shadow: 0px 10px 16px 0px #00000040;
+}
 .services_card_title {
     margin: 0;
 }

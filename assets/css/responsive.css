@@ -207,7 +207,7 @@ line-height: 30px;
   .menu_toggle span {
     display: block;
             width: 25px;
-        height: 2.7px;
+        height: 2.8px;
     background: var(--primary-color);
     transition: transform .25s ease, opacity .25s ease;
   }
