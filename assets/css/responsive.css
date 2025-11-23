@@ -75,6 +75,12 @@ line-height: 24px;
   .ratings_title{
     font-size: 24px;
   }
+  .logo a img{
+    width: 170px;
+  }
+  .footer_logo{
+    width: 280px;
+  }
   .ratings_subtitle{
     font-size: 12px;
   }
@@ -260,10 +266,10 @@ line-height: 30px;
   #primary-nav ul {
     flex-direction: column;
     gap: 20px;
+    padding: 0;
   }
 
   #primary-nav .nav_cta {
     margin-top: 20px;
-    margin-right: -35px;
   }
 }

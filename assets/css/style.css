@@ -617,6 +617,7 @@ box-shadow: 0px 10px 16px 0px #00000040;
 .footer_logo {
     height: auto;
     margin-bottom: 14px;
+    width: 350px;
 }
 
 .footer_about {
