@@ -1,29 +1,16 @@
  (function(){
-   try {
-     var body = document.body;
-     if (body) {
-       var loader = document.createElement('div');
-       loader.className = 'site-preloader';
-       loader.innerHTML = '<img src="assets/images/preloader.gif" alt="Loading...">';
-       body.classList.add('preloading');
-       body.appendChild(loader);
-       function hideLoader(){
-         if (!loader) return;
-         loader.classList.add('is-hidden');
-         body.classList.remove('preloading');
-         setTimeout(function(){
-           if (loader && loader.parentNode) loader.parentNode.removeChild(loader);
-           loader = null;
-         }, 350);
-       }
-       if (document.readyState === 'complete') {
-         hideLoader();
-       } else {
-         window.addEventListener('load', hideLoader);
-         setTimeout(hideLoader, 8000);
-       }
-     }
-   } catch (e) {}
+   function markDone(){
+     var b = document.body;
+     if (!b || b.classList.contains('preload-done')) return;
+     b.classList.add('preload-done');
+   }
+   if (document.readyState === 'complete') {
+     markDone();
+   } else {
+     window.addEventListener('load', markDone);
+     // Fallback in case the load event is delayed
+     setTimeout(markDone, 8000);
+   }
  })();
 
  document.addEventListener('DOMContentLoaded', function () {

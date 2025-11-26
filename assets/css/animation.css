@@ -64,3 +64,31 @@ body.preloading {
   width: 22vw;
   height: auto;
 }
+
+/* CSS-first preloader overlay: shown immediately before JS runs */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: #fff url(../images/preloader.gif) center center no-repeat;
+  background-size: 220px 70px;
+  transition: opacity .35s ease, visibility .35s ease;
+}
+
+/* Hide overlay when ready */
+body.preload-done::before {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Prevent scroll while preloader is active */
+body:not(.preload-done) {
+  overflow: hidden;
+}
+
+@media (max-width: 767.98px) {
+  body::before {
+  background-size: 140px 50px;
+}
+}
