@@ -192,6 +192,9 @@ line-height: 30px;
 .info_body, .hours_list li{
   font-size: 14px;
 }
+.footer_social_mobile{
+  flex-direction: column;
+}
 }
 @media (max-width: 1040px) {
   body.no-scroll {
