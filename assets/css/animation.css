@@ -37,3 +37,30 @@ to{ transform: translateX(-50%); }
 .hero .slide-inner {
  z-index: 2;
 }
+
+body.preloading {
+  overflow: hidden;
+}
+
+.site-preloader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity .35s ease;
+}
+
+.site-preloader.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.site-preloader img {
+  max-width: 140px;
+  width: 22vw;
+  height: auto;
+}
